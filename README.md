@@ -7,7 +7,13 @@ Just copy-paste these files into your project replacing the old library (if you 
 Then include in your project:
 
 ```php
-require_once("path/to/FileMaker.php")
+require_once("path/to/FileMaker.php");
+```
+
+And use it:
+
+```php
+$fm = new FileMaker($database, $host, $username, $password, $options);
 ```
 
 Hope you enjoy!
