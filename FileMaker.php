@@ -91,7 +91,7 @@ class FileMaker
      * @static
      *
      */
-    function isError($variable)
+    public static function isError($variable)
     {
         return is_a($variable, 'FileMaker_Error');
     }
