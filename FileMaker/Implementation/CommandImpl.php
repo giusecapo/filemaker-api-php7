@@ -13,11 +13,16 @@
  var $_preSortScriptParams;
  var $V0b9a204c;
  var $_recordId;
+ 
  function __construct($V0ab34ca9, $Vc6140495) {
- $this->_fm = $V0ab34ca9;
-$this->_layout = $Vc6140495; 
- $this->V0b9a204c= $V0ab34ca9->getProperty('recordClass');
+  $this->_fm = $V0ab34ca9;
+  $this->_layout = $Vc6140495; 
+  $this->V0b9a204c= $V0ab34ca9->getProperty('recordClass');
 }
+
+function FileMaker_Command_Implementation($V0ab34ca9, $Vc6140495) {
+  self::__construct($V0ab34ca9, $Vc6140495);
+ }
  function setResultLayout($Vc6140495) {
  $this->V7a2db0ea= $Vc6140495;
 }
