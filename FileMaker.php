@@ -113,7 +113,7 @@ class FileMaker
      * @return string The minimum server version.
      * @static
      */
-    function getMinServerVersion()
+    public static function getMinServerVersion()
     {
         return FileMaker_Implementation::getMinServerVersion();
     }

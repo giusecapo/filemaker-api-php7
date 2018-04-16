@@ -10,18 +10,18 @@
  {
  return '1.1';
 }
- function getMinServerVersion()
- {
+public static function getMinServerVersion(){
  return '10.0.0.0';
 }
- function __construct($V11e0eed8, $Vccd0e374, $V14c4b06b, $V5f4dcc3b)
- {
- $V07cc694b = time();
-if ((@include dirname(__FILE__) . '/../conf/filemaker-api.php') && isset($__FM_CONFIG)) {
- foreach ($__FM_CONFIG as $V23a5b8ab => $V2063c160) {
- $this->setProperty($V23a5b8ab, $V2063c160);
-}
-}
+
+function __construct($V11e0eed8, $Vccd0e374, $V14c4b06b, $V5f4dcc3b){
+  $V07cc694b = time();
+  if ((@include dirname(__FILE__) . '/../conf/filemaker-api.php') && isset($__FM_CONFIG)) {
+    foreach ($__FM_CONFIG as $V23a5b8ab => $V2063c160) {
+      $this->setProperty($V23a5b8ab, $V2063c160);
+    }
+  }
+
 if (!is_null($Vccd0e374)) {
  $this->setProperty('hostspec', $Vccd0e374);
 }
